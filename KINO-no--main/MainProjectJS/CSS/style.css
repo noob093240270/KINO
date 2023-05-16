@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --orange: #f50;
+    --activeText: rgb(255, 255, 255);
+    --noactiveText: rgb(179, 167, 167);
+    --blue: rgb(92, 92, 217);
+}
+
+
+body {
+    font-family: 'Scada', sans-serif;
+    background-color: black;
+}
+
+.container {
+    padding: 0 20px;
+
+}
+
+.header {
+    height: 72px;
+    user-select: none;
+    font-family: 'Scada', sans-serif;
+}
+
+.menu {
+    color: var(--activeText);
+    height: 100%;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+}
+
+.menu__list {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+.list_el {
+    color: var(--noactiveText);
+    line-height: 3;
+    user-select: none;
+}
+
+.list_el:hover {
+    color: var(--activeText);
+}
+
+.list_el:hover .cursor {
+    color: var(--noactiveText);
+    width: 100%;
+    transition: 0.3s;
+}
+
+.cursor {
+    margin: auto;
+    width: 0px;
+    height: 2px;
+    background-color: #f50;
+    transition: 0.3s;
+}
+
+.menu__logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu__logo .name {
+    font-size: 35px;
+    color: #f50;
+    font-weight: 700;
+}
+
+.burger-icon {
+    width: 25px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    margin-right: 20px;
+}
+
+.burger-line {
+    height: 2px;
+    width: 100%;
+    background-color: var(--noactiveText);
+}
+
+main {
+    color: var(--activeText);
+    font-family: 'Scada', sans-serif;
+}
+
+.content1__line {
+    font-weight: 700;
+    text-align: center;
+    font-size: 48px;
+}
+
+.content1__line.mode {
+    color: var(--blue);
+}
+
+.content1__line.small {
+    font-size: 20px;
+}
+
+.content1__line.very-small {
+    font-size: 16px;
+}
